@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Montserrat";
-    src: url('/fonts/Montserrat-Regular.woff') format('woff'),
-        url('/fonts/Montserrat-Regular.woff2') format('woff2');
+    src: url('./fonts/Montserrat-Regular.woff') format('woff'),
+        url('./fonts/Montserrat-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url('/fonts/Montserrat-Medium.woff') format('woff'),
-        url('/fonts/Montserrat-Medium.woff2') format('woff2');
+    src: url('./fonts/Montserrat-Medium.woff') format('woff'),
+        url('./fonts/Montserrat-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url('/fonts/Montserrat-SemiBold.woff') format('woff'),
-        url('/fonts/Montserrat-SemiBold.woff2') format('woff2');
+    src: url('./fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('./fonts/Montserrat-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url('/fonts/Montserrat-Bold.woff') format('woff'),
-        url('/fonts/Montserrat-Bold.woff2') format('woff2');
+    src: url('./fonts/Montserrat-Bold.woff') format('woff'),
+        url('./fonts/Montserrat-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -114,7 +114,7 @@ body {
 
 .main__image::before {
     content: '';
-    background: url('/img/bg.jpg') no-repeat;
+    background: url('./img/bg.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -194,7 +194,7 @@ body {
 
 .program::before {
     content: '';
-    background: url('/img/program.svg') no-repeat;
+    background: url('./img/program.svg') no-repeat;
     width: 43px;
     height: 52px;
     display: block;
@@ -241,7 +241,7 @@ body {
 .accordeon__icon {
     width: 24px;
     height: 14px;
-    background: url('/img/accordeon-arrow.svg') no-repeat;
+    background: url('./img/accordeon-arrow.svg') no-repeat;
     flex-shrink: 0;
     transform: rotate(0deg);
     transition: transform .5s;
@@ -289,7 +289,7 @@ body {
 
 .anket__btn::before {
     content: '';
-    background: url('/img/arrow-down.svg') no-repeat;
+    background: url('./img/arrow-down.svg') no-repeat;
     width: 20px;
     height: 22px;
     display: block;
@@ -309,7 +309,7 @@ body {
 
 .address::before {
     content: '';
-    background: url('/img/placemark.svg') no-repeat center;
+    background: url('./img/placemark.svg') no-repeat center;
     width: 36px;
     height: 36px;
     display: block;
