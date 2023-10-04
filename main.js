@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (langEl.dataset.lang == "rus") {
                     langBlockRus.style.display = "block"
                     langBlockEng.style.display = "none"
-                    logoImage.src = "/img/logo.svg"
+                    logoImage.src = "img/logo.svg"
                     logoImage.alt = "Логотип ДГУ"
                 } else {
                     langBlockEng.style.display = "block"
                     langBlockRus.style.display = "none"
-                    logoImage.src = "/img/logo-eng.svg"
+                    logoImage.src = "img/logo-eng.svg"
                     logoImage.alt = "DSU logo"
                 }
             }
