@@ -107,9 +107,23 @@ body {
 }
 
 .logo {
-    width: 273px;
-    height: 102px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
     position: relative;
+}
+
+.logo__img {
+    width: 102px;
+    height: 102px;
+    flex-shrink: 0;
+}
+
+.logo__text {
+    width: 153px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
 }
 
 .main__image::before {
@@ -221,11 +235,6 @@ body {
     padding: 13px 28px 18px;
 }
 
-.accordeon__control,
-.accordeon__content {
-    
-}
-
 .accordeon__item:not(:last-child) {
     margin-bottom: 12px;
 }
@@ -299,6 +308,7 @@ body {
 .anket__btn span {
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 .address {
@@ -313,6 +323,7 @@ body {
     width: 36px;
     height: 36px;
     display: block;
+    flex-shrink: 0;
 }
 
 .address__text {
@@ -353,4 +364,78 @@ body {
     font-weight: 600;
     line-height: 1.6;
     color: inherit;
+}
+
+@media (max-width: 1024px) {
+    .main__image {
+        padding: 25px 30px;
+    }
+
+    .logo__img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .logo__text {
+        font-size: 14px;
+    }
+
+    .main-content__wrapper {
+        padding: 55px 75px 36px 20px;
+    }
+    
+    .switch-language {
+        right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main__image {
+        flex: auto;
+        height: auto;
+        padding: 15px;
+    }
+
+    .main__image::before {
+        content: none;
+    }
+
+    .main-content__wrapper {
+        padding: 0 15px 25px;
+    }
+
+    .switch-language {
+        top: 23px;
+    }
+
+    .logo__text {
+        color: #000;
+    }
+
+    .contacts-block {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 525px) {
+    .main-content__title {
+        font-size: 24px;
+    }
+
+    .accordeon__item {
+        padding: 13px 14px 18px;
+    }
+
+    .data__list {
+        gap: 20px;
+    }
+
+    .address__text,
+    .data__value {
+        font-size: 16px;
+    }
 }

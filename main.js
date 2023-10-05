@@ -9,17 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const langBlockRus = document.querySelector(".main-content--rus")
                 const langBlockEng = document.querySelector(".main-content--eng")
-                const logoImage = document.querySelector(".logo img")
+                let logoImageText = document.querySelector(".logo__text")
                 if (langEl.dataset.lang == "rus") {
                     langBlockRus.style.display = "block"
                     langBlockEng.style.display = "none"
-                    logoImage.src = "img/logo.svg"
-                    logoImage.alt = "Логотип ДГУ"
+                    logoImageText.textContent = "Дагестанский государственный университет"
                 } else {
                     langBlockEng.style.display = "block"
                     langBlockRus.style.display = "none"
-                    logoImage.src = "img/logo-eng.svg"
-                    logoImage.alt = "DSU logo"
+                    logoImageText.textContent = "Dagestan State University"
                 }
             }
         })
