@@ -121,6 +121,7 @@ body {
 
 .logo__text {
     width: 153px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
     color: #fff;
@@ -326,13 +327,15 @@ body {
     flex-shrink: 0;
 }
 
-.address__text {
+.address__link {
+    display: block;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.6;
+    color: #000;
 }
 
-.address__text address {
+.address__link address {
     display: inline-block;
 }
 
@@ -377,7 +380,7 @@ body {
     }
 
     .logo__text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .main-content__wrapper {
@@ -434,7 +437,7 @@ body {
         gap: 20px;
     }
 
-    .address__text,
+    .address__link,
     .data__value {
         font-size: 16px;
     }
